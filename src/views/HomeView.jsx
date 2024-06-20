@@ -8,7 +8,7 @@ import Portfolio from "../components/Portfolio";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Main from "../components/Main";
-
+import About from "../components/About";
 const HomeView = () => {
   return (
     <>
@@ -16,6 +16,7 @@ const HomeView = () => {
       <Header />
       <Main>
         <Intro />
+        <About />
         <Skill />
         <Site />
         <Portfolio />
