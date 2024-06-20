@@ -1,6 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+
 const iconsData = [
   {
     href: "https://github.com/your-github-username",
@@ -11,12 +13,14 @@ const iconsData = [
     icon: faLinkedin,
   },
 ];
+
 const scrollToAbout = () => {
   const aboutSection = document.getElementById("about");
   if (aboutSection) {
     aboutSection.scrollIntoView({ behavior: "smooth" });
   }
 };
+
 const Intro = () => {
   return (
     <section id="intro">
@@ -27,7 +31,7 @@ const Intro = () => {
               Welcome to my <em>portfolio</em>
             </div>
             <div className="text-second">
-              talent is found at the end of theeffort
+              Talent is found at the end of the effort
             </div>
           </div>
           <div className="intro__icons">
@@ -43,7 +47,8 @@ const Intro = () => {
             ))}
           </div>
           <button onClick={scrollToAbout} className="scroll-button">
-            Scroll Down
+            Scroll Down{" "}
+            <FontAwesomeIcon icon={faArrowDown} style={{ marginLeft: "5px" }} />
           </button>
         </div>
       </div>

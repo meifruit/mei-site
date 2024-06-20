@@ -30,8 +30,8 @@
   .intro__text {
     width: 100%;
     height: 100vh;
-    background-color: var(--black);
-    color: var(--white);
+    background-color: #222;
+    color: var(--mainBg-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,7 +55,7 @@
       }
 
       @media (max-width: 800px) {
-        font-size: 24px;
+        font-size: 20px;
       }
     }
   }
@@ -72,14 +72,11 @@
     }
   }
   .intro__icons {
-    margin-top: 30px;
+    padding-top: 150px;
     a {
       margin: 0 10px;
-      color: var(--white);
+      color: var(--mainBg-color);
       transition: color 0.3s ease;
-    }
-    a:hover {
-      color: #0073b1;
     }
   }
 }
@@ -88,7 +85,7 @@
   padding: 10px 20px;
   border: none;
   background-color: #333;
-  color: #fff;
+  color: var(--mainBg-color);
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;

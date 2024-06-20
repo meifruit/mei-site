@@ -12,10 +12,10 @@
     text-align: center;
     text-transform: uppercase;
     line-height: 1;
+    color: var(--mainBg-color);
     em {
       font-size: 10px;
       display: block;
-      color: var(--black200);
     }
   }
 }
@@ -64,7 +64,7 @@
       font-size: 14px;
       padding: 14px;
       position: relative;
-      color: #fff;
+      color: var(--mainBg-color);
 
       &::before {
         content: "";

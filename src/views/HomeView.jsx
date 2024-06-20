@@ -19,7 +19,6 @@ const HomeView = () => {
         <About />
 
         <Portfolio />
-        <Contact />
       </Main>
       <Footer />
     </>
