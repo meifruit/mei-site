@@ -11,7 +11,12 @@ const iconsData = [
     icon: faLinkedin,
   },
 ];
-
+const scrollToAbout = () => {
+  const aboutSection = document.getElementById("about");
+  if (aboutSection) {
+    aboutSection.scrollIntoView({ behavior: "smooth" });
+  }
+};
 const Intro = () => {
   return (
     <section id="intro">
@@ -37,6 +42,9 @@ const Intro = () => {
               </a>
             ))}
           </div>
+          <button onClick={scrollToAbout} className="scroll-button">
+            Scroll Down
+          </button>
         </div>
       </div>
     </section>

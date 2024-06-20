@@ -73,15 +73,31 @@
   }
   .intro__icons {
     margin-top: 30px;
+    a {
+      margin: 0 10px;
+      color: var(--white);
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #0073b1;
+    }
   }
+}
+.scroll-button {
+  margin-top: 50px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
-  .intro__icons a {
-    margin: 0 10px;
-    color: var(--white);
-    transition: color 0.3s ease;
-  }
+.scroll-button:hover {
+  transform: translateY(-3px);
+}
 
-  .intro__icons a:hover {
-    color: #0073b1; /* Change to your preferred hover color */
-  }
+.scroll-button:active {
+  transform: translateY(1px);
 }

@@ -17,8 +17,7 @@ const HomeView = () => {
       <Main>
         <Intro />
         <About />
-        <Skill />
-        <Site />
+
         <Portfolio />
         <Contact />
       </Main>

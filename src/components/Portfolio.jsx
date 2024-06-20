@@ -76,9 +76,7 @@ const Portfolio = () => {
   return (
     <section id="port">
       <div className="port__inner">
-        <div className="port__title">
-          portfolio <em>포폴 작업물</em>
-        </div>
+        <div className="port__title">portfolio</div>
         <div className="port__wrap">
           {portText.map((port, key) => (
             <article className={`port__item p${key + 1}`} key={key}>
